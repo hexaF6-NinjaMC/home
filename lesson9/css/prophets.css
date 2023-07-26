@@ -1,0 +1,58 @@
+body {
+    background-color:rgba(80, 80, 109, 0.411);
+    font-size: 20px;
+}
+
+header, main, footer {
+    text-align: center;
+    position: relative;
+}
+
+header {
+    color:rgb(71, 64, 57);
+}
+
+main {
+    box-shadow: 0 0 10px;
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 2vh auto;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+div section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(189, 180, 168);
+    border: 1px solid rgb(41, 44, 59);
+    margin: 0.25rem;
+    padding: 0.35rem;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    background-color:rgb(253, 219, 180);
+}
+
+footer {
+    margin: 20px auto;
+    font-size: 24px;
+    width: 80%;
+}
