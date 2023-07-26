@@ -1,0 +1,146 @@
+#footer-text {
+    font-size: 20px;
+}
+
+#last-update {
+    color: rgb(240, 240, 0);
+}
+
+#color-scheme-heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#portal {
+    color:rgb(25, 55, 138);
+}
+
+#portal:hover {
+    color: rgb(139, 185, 199);
+}
+
+.primary {
+    background-color: #0a5370c2;
+    color: #ffffff;
+}
+
+.secondary {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.accent-one {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.accent-two {
+    background-color: #00ffff;
+    color: #000000;
+}
+
+.present-page {
+    color: #00ffff;
+}
+
+.headings, .paragraph-text-ex, .link-text-ex {
+    border: 1px solid darkgray;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link-text-ex a {
+    color:rgb(25, 55, 138);
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-items: center;
+    overflow-y: auto;
+}
+
+body {
+    top: 0;
+    bottom: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+h1, h2, h3, p {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header, footer {
+    background-color: #0a5370c2;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 30px 40px;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 5px 5px #999;
+}
+
+section {
+    padding: 1em;
+    border: 1px solid rgb(10, 10, 10);
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+
+table tr td {
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5em;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}

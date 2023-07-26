@@ -1,0 +1,98 @@
+header, footer {
+    background-color: rgba(10, 83, 112, 0.76);
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+#name {
+    margin-top: -20px;
+}
+
+main {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+}
+
+section {
+    background-color: rgb(235, 238, 236);
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0;
+}
+
+h2, h3, p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section div {
+    background-color:rgba(16, 41, 51, 0.76);
+    border-radius: 10px 10px 0 0;
+    height: 35px;
+}
+
+.topic {
+    font-size: 25px;
+    color: white;
+    margin: 0 auto;
+    margin-left: 10px;
+    height: auto;
+}
+
+.company {
+    color: rgb(66, 65, 65);
+    margin: 0 auto 0 8px;   /* top right bottom left: REMEMBER THIS!!! */
+}
+
+.company-webpage {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+a:hover, a:visited:hover {
+    color: deepskyblue;
+}
+
+a:visited {
+    color: darkmagenta;
+}
+
+.screenshot {
+    margin-top: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+}
+
+.explanation {
+    margin-left: 5px;
+}
+
+main p {
+    color: rgb(36, 34, 34);
+}
+
+#footer-text {
+    margin-bottom: -15px;
+    font-size: 20px;
+}
+
+#last-update {
+    color: rgb(240, 240, 0);
+    line-height: 30px;
+}

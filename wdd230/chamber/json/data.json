@@ -1,0 +1,76 @@
+{
+    "businesses": [
+        {
+            "name": "Del Rancho",
+            "address": "462 West State Highway 152, Mustang, OK, 73064, U.S.A.",
+            "phoneNumber": "405-376-6100",
+            "url": "https://delranchomustang.com/",
+            "brandImage": "https://images.squarespace-cdn.com/content/v1/5d3fac41a119a30001425d13/1564695993552-RS0INU9TZUFCEC76KRUW/LOGO.png?format=1500w",
+            "membership": "np"
+        },
+        {
+            "name": "McDonald's",
+            "address": "4 South Mustang Rd, Oklahoma City, OK, 73099, U.S.A.",
+            "phoneNumber": "405-265-1834",
+            "url": "https://www.mcdonalds.com/us/en-us/location/OK/OKLAHOMA-CITY/4-S-MUSTANG-RD/27721.html?cid=RF:YXT:GMB::Clicks",
+            "brandImage": "https://corporate.mcdonalds.com/is/image/content/dam/gwscorp/nfl/newsroom/media_assets/Golden%20Arches.png?$MEDIA_LISTING_IMAGE_DESKTOP$",
+            "membership": "np"
+        },
+        {
+            "name": "KFC",
+            "address": "221 North Mustang Road, Mustang, OK, 73064, U.S.A.",
+            "phoneNumber": "405-376-9640",
+            "url": "https://locations.kfc.com/ok/mustang/221-north-mustang-road",
+            "brandImage": "https://locations.kfc.com/permanent-b0b701/assets/images/logo_black.c0af2f38.png",
+            "membership": "bronze"
+        },
+        {
+            "name": "Sonic",
+            "address": "729 West Main Street, Yukon, OK, 73099, U.S.A.",
+            "phoneNumber": "405-354-7424",
+            "url": "https://locations.sonicdrivein.com/ok/yukon/729-w.-main-street.html",
+            "brandImage": "https://www.sonicdrivein.com/static/img/logos/sonic-logo.svg",
+            "membership": "bronze"
+        },
+        {
+            "name": "Space Center Houston",
+            "address": "1601 NASA Parkway, Houston, Texas, 77058, U.S.A.",
+            "phoneNumber": "281-244-2100",
+            "url": "https://spacecenter.org/",
+            "brandImage": "https://spacecenter.org/wp-content/uploads/2018/10/space-center-houston-logo-header-small-v2.png",
+            "membership": "gold"
+        },
+        {
+            "name": "Houston Livestock Show and Rodeo",
+            "address": "NRG Center, 3 NRG Park, Houston, Texas, 77054, U.S.A.",
+            "phoneNumber": "832-667-1000",
+            "url": "https://www.rodeohouston.com/",
+            "brandImage": "https://www.rodeohouston.com/Portals/0/logo_houston-livestock-show-rodeo.png",
+            "membership": "silver"
+        },
+        {
+            "name": "Chuck E. Cheese",
+            "address": "1541 West Bay Area Boulevard, Webster, Texas, 77598, U.S.A.",
+            "phoneNumber": "281-332-9780",
+            "url": "https://locations.chuckecheese.com/us/tx/webster/1541-west-bay-area-blvd.",
+            "brandImage": "https://locations.chuckecheese.com/permanent-b0b701/assets/images/logo-red.9fc7c9eb.svg",
+            "membership": "np"
+        },
+        {
+            "name": "Oak Park Mall",
+            "address": "11149 West 95th Street, Overland Park, Kansas, 66214, U.S.A.",
+            "phoneNumber": "913-888-4400",
+            "url": "https://www.thenewoakparkmall.com/",
+            "brandImage": "https://cblproperty.blob.core.windows.net/production/assets/blt96ea856e432d1ab4-CBL_OarkPark_BW_760x240.png",
+            "membership": "bronze"
+        },
+        {
+            "name": "Joe's Kansas City Bar-B-Que",
+            "address": "3002 West 47th Avenue, Kansas City, Kansas, 66103, U.S.A.",
+            "phoneNumber": "913-722-3366",
+            "url": "https://www.joeskc.com/pages/the-original-gas-station-restaurant-22",
+            "brandImage": "https://cdn.shopify.com/s/files/1/0818/5843/t/20/assets/JOES_KC.png?v=82506705893309348191563395030",
+            "membership": "silver"
+        }
+    ]
+}
