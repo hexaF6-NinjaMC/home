@@ -30,7 +30,9 @@ anchors.forEach((anchor) => {
 <li><a href="${anchor.url}" target="_blank">${anchor.text}</a></li>
   `;
 
-  postListEl.appendChild(liElTemplate);
+  let liElHTML = document.createTextNode(liElTemplate);
+
+  postListEl.appendChild(liElHTML);
 });
 
 const now = new Date();
