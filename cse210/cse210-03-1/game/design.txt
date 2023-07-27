@@ -1,0 +1,42 @@
+Classes
+    Display
+        displays the game pieces and outputs
+    Word-Generator
+        generates a random word for the game from a pre-existing list of words
+    Player
+        receives player input and pushes it to the Conductor in a variable type that the Conductor
+        can process properly
+    Conductor
+        receives input from the word generator and player classes, processes it, and then directs the display
+        class on what to show
+
+
+Hierarchy
+    Player and Word-Gen feed into Conductor, which feeds into Display, which feeds into Main
+
+
+Assignments/What do these classes need?
+    Conductor
+        needs to import data from word-gen and player, and import Display class ( this may change if we can find a way for Display class to output everything instead.)
+        keeps word constant for gameplay duration
+        determines if a guess is right or wrong
+        tracks how many guesses player has left
+        determines if a player has won or lost
+
+    Word-Generator
+        has a predetermined list of words
+        randomly selects a word from the list
+
+    Player
+        receive player input
+        store input in a proper variable format
+
+    Display
+        displays number of letters in a word as underscores
+        updates underscores to correct letters as they are guessed
+        displays parachute guy and spikes
+        updates parachute as incorrect guesses are made
+        updates head to an x if the player loses
+        tells the player what to do(tells them to guess and what they can guess)
+        tells the player if their guess was wrong or right
+        tells the player when they win or lose

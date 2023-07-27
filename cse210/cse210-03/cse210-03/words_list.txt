@@ -1,0 +1,10 @@
+skateboard
+book
+rain
+key
+worm
+chimney
+coin
+dog
+starfish
+cupcake
