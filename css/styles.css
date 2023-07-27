@@ -15,6 +15,11 @@ main {
   background-image: none;
 }
 
+ul {
+  text-decoration: none;
+  padding: 0;
+}
+
 h1 {
   font-size: 2.5rem;
 }
@@ -28,13 +33,15 @@ h3 {
 }
 
 a:link {
-  color: #AC2276;
-}
-
-a:visited {
+  background-color: #FCF7FF;
   color: #0F52BA;
 }
 
+a:visited {
+  color: #AC2276;
+}
+
 a:hover {
+  background-color: #1C2321;
   color: #6FFFE9;
 }
