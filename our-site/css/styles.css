@@ -1,0 +1,25 @@
+:root {
+    --primary-magnolia: #fcf7ff;
+    --secondary-sapphire: #0f52ba;
+    --tertiary-fandango: #ac2276;
+    --quarternary-fluorescent-cyan: #6fffe9;
+    --quinary-rose-quartz: #a4969b;
+    --shade-color: rgba(0, 0, 0. 0.5);
+    --pop-up-color: rgba(105, 196, 199, 0.85);
+}
+
+header, footer {
+    background-color: var(--tertiary-fandango);
+}
+
+header>h1, footer>h4 {
+    color: var(--primary-magnolia);
+}
+
+footer>h4>a, footer>h4>a:visited {
+    color: var(--secondary-sapphire);
+}
+
+footer>h4>a:hover {
+    color: var(--quarternary-fluorescent-cyan);
+}
