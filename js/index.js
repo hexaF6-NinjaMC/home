@@ -12,10 +12,6 @@ const anchors = [
 		url: "./wdd330/"
 	},
 	{
-		text: "A MSWord-2-HTML Python program to auto fill notes",
-		url: "./wdd330/py/"
-	},
-	{
 		text: "Showcasing the temples of the Church of Jesus Christ of Latter-Day Saints, while enjoying a stay at the Temple Inn & Suites",
 		url: "./wdd230/temple-inn-and-suites/"
 	},
