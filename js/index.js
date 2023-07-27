@@ -18,6 +18,18 @@ const anchors = [
 	{
 		text: "A DOM-manipulation example, allowing you to present your favorite chapter from the Book of Mormon",
 		url: "./wdd230/dom-practice/bom.html"
+	},
+	{
+		text: "An Animated Representation of Our Solar System, in Only CSS3 and HTML!",
+		url: "./our-site/html/solar-system.html"
+	},
+	{
+		text: "Our Blogging Site (currently in development!!!)",
+		url: "./our-site/html/"
+	},
+	{
+		text: "An Example of Utlizing the Position properties in CSS",
+		url: "./our-site/html/html-testing-file.html"
 	}
 ];
 
