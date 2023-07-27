@@ -8,6 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 html, body {
   margin: 0 auto;
+  padding: .25em;
 }
 
 main {
@@ -15,21 +16,25 @@ main {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 h3 {
-  font-size: .75rem;
+  font-size: .75em;
+}
+
+a:link {
+  color: #AC2276;
+}
+
+a:visited {
+  color: #0F52BA;
 }
 
 a:hover {
   color: #6FFFE9;
-}
-
-a:visited, a {
-  color: #0F52BA;
 }
