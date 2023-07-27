@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Join Us! | Great Plains Chamber of Commerce</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Aaron Bechtel">
+        <meta name="description" content="Chamber of Commerce Join page for Aaron Bechtel in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <script src="js/index.js" defer></script>
+        <script src="js/joinPage.js" defer></script>
+        <script src="js/hamburger.js"></script>
+    </head>
+
+    <body>
+        <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+        <header>
+            <div class="image-container topRow">
+                <a href="index.html"><img src="images/gpcLogo.webp" alt="gpc-logo" class="header-logo"></a>
+            </div>
+            <section class="company-headings-container topRow">
+                <h1 id="first-company-heading">Great Plains</h1>
+                <h2 id="second-company-heading">Chamber of Commerce</h2>
+            </section>
+            <div class="social-media-container topRow">
+                <a href="https://www.facebook.com/" target="_blank"><img class="logo" src="images/logos/f_logo_RGB-Blue_58.png" alt="facebook-logo" id="facebook-icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="logo" src="images/logos/In-White-72-Γö¼┬½.png" alt="linkdin-logo" id="linkedin-icon"></a>
+            </div>
+            <div class="header-date-container bottomRow">
+                <p id="header-date"></p>
+            </div>
+            <nav>
+                <button class="toggler" onclick="toggleMenu()"><span>&#9776; MENU</span></button>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="active">Join</li>
+                    <li><a href="contact.html">Contact</a></li>   
+                </ul>
+            </nav>
+        </header>
+
+        <main id="joinMain">
+            <form method="get" action="thankyou.html">
+                <fieldset class="top">
+                    <legend>Contact Information</legend>
+                    <label>First Name*: <input type="text" name="fname" required placeholder="John"></label>
+                    <label>Last Name*: <input type="text" name="lname" required placeholder="Smith"></label>
+                    <label>Position Title: <input type="text" name="title" pattern="[A-Za-z\-*\s*]{7,}" placeholder="My title - I"></label>
+                    <label>Email*: <input type="email" placeholder="myemail@domain.ext" required></label>
+                    <label>Cell Phone*: <input type="tel" placeholder="4445556678 or 14445556678" minlength="9" maxlength="10" required></label>
+                    <label>Business Name*: <input type="text" required placeholder="My Business name"></label>
+                </fieldset>
+                <fieldset class="middle">
+                    <legend>Membership Level*:</legend>
+                    <label><input type="radio" name="membership" value="nonProfit" required> NP Membership</label>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                </fieldset>
+                <fieldset class="bottom">
+                    <label>Describe your business: <textarea name="description"></textarea></label>
+                </fieldset>
+                
+                <div class="hiddenDate">
+                    <p></p>
+                </div>
+                <input type="submit" value="Click to Join" id="submitBtn">
+            </form>
+
+            <div id="membershipDescription">
+                <h3>Membership Tiers & Benefits:</h3>
+                <ul>
+                    <li>
+                        <h4>Non-profit (NP)</h4>
+                        <p>This membership has no additional benefits, as it is free. You have all the free perks, like 1 base vote on Chamber decisions, 5% off Tuesdays at select event businesses, and others.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4>Bronze - $50.00 monthly, or $575.00 annually</h4>
+                        <p>The Bronze membership tier has all the base (NP) benefits, yet more savings (5% on Tuesdays AND Thursdays) and votes (+1)!</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4>Silver - $75.00 monthly, or $875.00 annually</h4>
+                        <p>With the Silver membership tier, you get access to our spotlights, plus lower-tier benefits! Each week, get showcased once on either Monday, Wednesday, or Friday to reach more customers! (Gold Tier memberships have priority.)</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4>Gold - $100.00 monthly, or $1,175.00 annually</h4>
+                        <p>At the highest tier, Gold members have all the perks as lower-tiers, a total of three (3) votes per decision, and 4 days in the spotlight! Members also have a 15% discount at participating businesses, <em>EVERY MONDAY, WEDNESDAY, and FRIDAY!</em></p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        
+        <footer>
+            <section>
+                <img src="images/gpcLogo.webp" alt="gpc-logo" class="footer-logo">
+            </section>
+            
+            <section>
+                <p id="footer-text">&copy; </p>
+                <p id="last-update">WDD 230 Project | Last updated: </p>
+                <p>info@greatplainschamber.com<br>+1 (123) 888-7766 | <a class="locationMap" href="#">Location Map</a></p>
+            </section>
+        </footer>
+    </body>
+</html>

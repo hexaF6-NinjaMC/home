@@ -1,0 +1,21 @@
+@media only screen and (min-width: 60em) {
+    div a {
+        font-size: 25px;
+        text-align: right;
+    }
+
+    div a {
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+
+    a:hover {
+        color:#96c1c4;
+    }
+    
+    .nav-link h1 {
+        text-shadow: 2px 2px #999;
+        font-size: 1.5rem;
+        padding-right: 5px;
+    }
+}

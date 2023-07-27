@@ -1,0 +1,79 @@
+.header-logo {
+    max-width: 75%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    background-color: #0a5370c2;
+    max-height: 124px;
+}
+
+h1, h2 {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+section {
+    grid-column: 2 / span 2;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    color: cyan;
+}
+
+nav {
+    order: 1;
+    float: right;
+    max-height: 50%;
+    text-align: right;
+    grid-column-start: -2;
+    justify-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #96c1c4;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+
+
+
+

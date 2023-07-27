@@ -1,0 +1,263 @@
+/* IDs */
+    #weather-alert {
+        background-color: burlywood;
+        text-align: center;
+    }
+
+    #header-top {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+    }
+
+    #contact-link {
+        color: #e0e400;
+    }
+
+    #content {
+        transition: margin-left 0.5s;
+        position: relative;
+        width: 100vw;
+    }
+
+    #call-to-action {
+        max-height: 24vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #call-to-action picture {
+        grid-row: 1 / 2;
+        grid-column-start: 1;
+        max-height: inherit;
+    }
+
+    #banner-img {
+        display: block;
+        width: 100%;
+        max-height: inherit;
+        object-fit: cover;
+    }
+    
+    #call-to-action div h3 {
+        text-shadow: 1px 1px 1px rgb(111, 134, 7);
+        color: rgb(255, 251, 1);
+        margin: 1%;
+    }
+
+    #call-to-action div {
+        display: flex;
+        flex-direction: column;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        margin-left: 3%;
+    }
+
+    #call-to-action div p {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto -3% 0.5rem;
+        color: white;
+        background-color:rgba(252, 228, 19, 0.363);
+    }
+
+    #featured-temple {
+        width: 100%;
+    }
+
+    #weather {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #weather figure {
+        grid-column: 1 / span all;
+        text-align: center;
+        margin: 0;
+    }
+
+    #weather h5 {
+        grid-column: 1 / span all;
+        text-align: center;
+        margin: 3% auto 0;
+    }
+
+    #weather h6 {
+        grid-row: 3;
+        text-align: center;
+        margin: 5% 0 0;
+    }
+
+/* Classes */
+    .navigation {
+        list-style: none;
+        display: grid;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .top label input:required {
+        border-left: red solid 5px;
+    }
+
+    .top label input:required:valid {
+        border-left: green solid 5px;
+    }
+
+    .top label input, .bottom label textarea {
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #555;
+        border-radius: 5px;
+        padding: 0.5rem;
+        background-color:rgb(212, 212, 212);
+        width: 94%;
+        max-width: 20rem;
+    }
+
+    #submitBtn {
+        border: none;
+        background-color: #9c2c13;
+        color: white;
+        border-radius: 1rem;
+        padding: 0.75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        width: 94%;
+        max-width: 20rem;
+    }
+
+    .navigation li {
+        padding: 1vh 0;
+        border: 1px dotted black;
+    }
+
+    .navigation, .navigation li {
+        display: block;
+        width: inherit;
+    }
+
+    .navigation li a {
+        color: whitesmoke;
+    }
+
+    .closeBtn, .toggler {
+        background-color: transparent;
+        border: none;
+    }
+
+    .header-middle {
+        background-color: #776439;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center; 
+        background-color: #C0A840;
+        max-width: 25vw;
+    }
+
+    .facebook {
+        margin-left: 2vw;
+    }
+
+    .linkedin {
+        margin: 0 2vw;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        background-color: goldenrod;
+    }
+
+/* Elements */
+    body {
+        font-family: "Noto Serif", serif;
+        max-width: 100vw;
+        background-color: rgba(252, 228, 19, 0.363);
+    }
+
+    header img#logo-img {
+        width: 25vw;
+        grid-area: 1 / 1 / span 1;
+    }
+
+    header h1, header h2, h3 {
+        font-family: "Dancing Script", cursive;
+    }
+
+    header h1, header h2 {
+        color: whitesmoke;
+        text-align: center;
+        display: block;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    hr {
+        max-width: 90vw;
+        background-color: black;
+        height: 1px;
+        border-radius: 2%;
+    }
+
+    main {
+        max-width: 96vw;
+        padding: 2vw;
+        transition: margin-left 0.5s;
+    }
+
+    header .social img {
+        max-width: 10vw;
+    }
+
+    main section {
+        max-width: 90vw;
+        border: 1px dotted #776439;
+        padding: 2vw;
+        margin: 0 auto;
+    }
+
+    main section h4 {
+        margin: 0.5rem 0;
+    }
+
+    h6 {
+        display: block;
+    }
+
+    section ul {
+        margin: 0;
+    }
+
+    footer {
+        display: grid;
+        background-color: #776439;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    footer hr {
+        display: block;
+        background-color: white;
+        height: 1px;
+        width: 90vw;
+    }
+
+    footer a {
+        color: rgb(217, 247, 255);
+        text-decoration: none;
+    }

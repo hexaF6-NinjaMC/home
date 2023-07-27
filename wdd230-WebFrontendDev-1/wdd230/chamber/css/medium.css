@@ -1,0 +1,116 @@
+@media only screen and (min-width: 32.5rem) {
+    .company-headings-container {
+        font-size: 1rem;
+    }
+
+    .bottomRow {
+        margin: 0 0 2% 0;
+    }
+
+    p#header-date {
+        font-size: 2rem;
+        margin-bottom: auto; 
+    }
+
+    header {
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr 0.25fr;
+    }
+
+    #spotlights {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: none;
+        grid-gap: 1vw;
+        grid-row: 3;
+    }
+
+    #hero div h3, #hero div a {
+        font-size: 2.5rem;
+    }
+
+    .hiddenMed {
+        display: block;
+    }
+
+    #joinSection {
+        height: auto;
+    }
+
+    #joinSection .joinLink {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .joinLink a {
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+
+    #joinSection #flavor p {
+        font-style: italic;
+        text-align: center;
+        margin: 1% auto 0 auto;
+    }
+
+    .spotlight {
+        margin: 0 0 2vh 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    #hero {
+        grid-area: 1 / span 3;
+    }
+
+    #news {
+        grid-area: 2 / span 3;
+    }
+
+    #spotlights {
+        grid-area: 3 / span 3;
+    }
+
+    #joinSection {
+        grid-area: 4 / span 3;
+    }
+
+    #event {
+        grid-area: 5 / span 2;
+    }
+
+    #weather {
+        grid-area: 5 / span 1;
+    }
+
+    #weather hr {
+        font-size: 2rem;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+    
+    #visitDaysBanner {
+        grid-column: 1 / span 3;
+    }
+
+    #discoverStatsSection {
+        grid-column: 1 / span 2;
+        margin-right: 1rem;
+    }
+
+    #discoverImgContainer {
+        grid-column: -2;
+        grid-template-rows: auto repeat(5, 1fr);
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        grid-gap: 0.5rem;
+    }
+
+    h3, li, article {
+        font-size: 1.5rem;
+    }
+}

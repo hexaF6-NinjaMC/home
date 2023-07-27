@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home | Great Plains Chamber of Commerce</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Aaron Bechtel">
+        <meta name="description" content="Chamber of Commerce site project for Aaron Bechtel in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=fallback" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <script src="js/index.js" defer></script>
+        <script src="js/windchill.js" defer></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/weatherapi2.js" defer></script>
+        <script src="js/spotlight.js" defer></script>
+    </head>
+
+    <body>
+        <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+        <header>
+            <div class="image-container topRow">
+                <a href="index.html"><img src="images/gpcLogo.webp" alt="gpc-logo" class="header-logo"></a>
+            </div>
+            <section class="company-headings-container topRow">
+                <h1 id="first-company-heading">Great Plains</h1>
+                <h2 id="second-company-heading">Chamber of Commerce</h2>
+            </section>
+            <div class="social-media-container topRow">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <picture>
+                        <img class="logo" src="images/logos/f_logo_RGB-Blue_58.png" alt="facebook-logo" id="facebook-icon">
+                    </picture>
+                    </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <picture>
+                        <img class="logo" src="images/logos/In-White-72-Γö¼┬½.png" alt="linkdin-logo" id="linkedin-icon">
+                    </picture>
+                </a>
+            </div>
+            <div class="header-date-container bottomRow">
+                <p id="header-date"></p>
+            </div>
+            <nav>
+                <button class="toggler" onclick="toggleMenu()"><span>&#9776; MENU</span></button>
+                <ul class="navigation">
+                    <li class="active">Home</li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div>
+                    <picture>
+                        <source media="(max-width: 31rem)" srcset="images/wdd230-orgSMALL.webp">
+                        <source media="(max-width: 60rem)" srcset="images/wdd230-orgMEDIUM-2.webp">
+                        <source media="(max-width: 74rem)" srcset="images/wdd230-orgLARGE-2.webp">
+                        <img src="images/wdd230-orgLARGE.webp" alt="background image" id="heroImg">
+                    </picture>
+                    <h3>Welcome to the Great Plains!</h3>
+                    <a class="joinLink" id="heroJoinLink" href="join.html"><h3>Join GPC!</h3></a>  
+                </div>
+            </section>
+
+            <section id="event" class="content">
+                <h3 id="eventTitle">Ribbon Cutting</h3>
+                <h4 id="eventHeader">Welcome, Ranch-boys!</h4>
+                <p>Join us for the grand opening of Ranch-boys, a vegan burger joint, at 1:00 p.m. <a href="#" class="moreInfo">more info...</a></p>
+                <img src="images/NicePng_ribbon-cutting-png_1216611.webp" alt="scissors cutting red ribbon">
+                <div id="eventImgContainer">
+                    <br>
+                    <img src="images/veggie-burger-clipart.webp" alt="Vegetarian burger" id="eventImg">
+                </div>
+            </section>
+
+            <section id="weather" class="content">
+                <h3>Weather</h3>
+                <div id="chart">
+                    <div id="weatherDetails">
+                        <figure>
+                            <img src="" alt="" id="weather-icon">
+                            <h3><span id="current-temp"></span>&deg;F</h3>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    
+                    <hr>
+
+                    <div id="weatherData">
+                        <p>Wind Speed: &emsp; <span id="windSpeedMPH"></span>mph</p>
+                        <p>Wind Chill: &emsp; <span id="windChillFactor"></span></p> 
+                    </div>
+                </div>
+            </section>
+
+            <section id="news" class="content">
+                <h3>News Release</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis eget velit. In fermentum posuere urna nec tincidunt. Iaculis urna id volutpat lacus laoreet. Morbi quis commodo odio aenean sed adipiscing diam donec. Viverra vitae congue eu consequat ac felis donec. Nunc consequat interdum varius sit amet mattis vulputate. Quam quisque id diam vel quam. Arcu dictum varius duis at consectetur lorem donec massa sapien. Accumsan sit amet nulla facilisi morbi tempus. Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Nunc mattis enim ut tellus. Suspendisse faucibus interdum posuere lorem. Iaculis eu non diam phasellus vestibulum.
+                </p>
+            </section>
+            
+            <section id="spotlights" class="content"></section>
+
+            <section class="hiddenMed content" id="joinSection">
+                <a class="joinLink" href="join.html"><h3>Join Us!</h3></a>
+                <div id="flavor">
+                    <p>Discover how to join the chamber of commerce and what your membership will benefit you!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <img src="images/gpcLogo.webp" alt="gpc-logo" class="footer-logo">
+            </section>
+            
+            <section>
+                <p id="footer-text">&copy; </p>
+                <p id="last-update">WDD 230 Project | Last updated: </p>
+                <p>info@greatplainschamber.com<br>+1 (123) 888-7766 | <a class="locationMap" href="#">Location Map</a></p>
+                <p>API use courtesy of <a class="anchor" href="https://openweathermap.org/">OpenWeatherMap</a></p>
+            </section>
+        </footer>
+    </body>
+</html>

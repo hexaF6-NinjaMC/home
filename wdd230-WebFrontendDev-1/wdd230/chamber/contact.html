@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us | Great Plains Chamber of Commerce</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Aaron Bechtel">
+        <meta name="description" content="Chamber of Commerce site project for Aaron Bechtel in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <script src="js/index.js" defer></script>
+        <script src="js/hamburger.js"></script>
+    </head>
+
+    <body>
+        <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+        <header>
+            <div class="image-container topRow">
+                <a href="index.html"><img src="images/gpcLogo.webp" alt="gpc-logo" class="header-logo"></a>
+            </div>
+            <section class="company-headings-container topRow">
+                <h1 id="first-company-heading">Great Plains</h1>
+                <h2 id="second-company-heading">Chamber of Commerce</h2>
+            </section>
+            <div class="social-media-container topRow">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <picture>
+                        <img class="logo" src="images/logos/f_logo_RGB-Blue_58.png" alt="facebook-logo" id="facebook-icon">
+                    </picture>
+                    </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <picture>
+                        <img class="logo" src="images/logos/In-White-72-Γö¼┬½.png" alt="linkdin-logo" id="linkedin-icon">
+                    </picture>
+                </a>
+            </div>
+            <div class="header-date-container bottomRow">
+                <p id="header-date"></p>
+            </div>
+            <nav>
+                <button class="toggler" onclick="toggleMenu()"><span>&#9776; MENU</span></button>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li class="active">Contact</li>    
+                </ul>
+            </nav>
+        </header>
+
+        <main id="contactMain">
+            <section>
+                <h3>Contact us by:</h3>
+                <ul>
+                    <li>Our Email: <a href="mailto:info@greatplainschamber.com">info@greatplainschamber.com</a></li>
+                    <li>Our Phone number: <a href="tel:+11238887766">+1 (123) 888-7766</a></li>
+                </ul>
+                <p>Our hours of operation are from 9 A.M. to 5 P.M., CST.</p>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <section>
+                <img src="images/gpcLogo.webp" alt="gpc-logo" class="footer-logo">
+            </section>
+            
+            <section>
+                <p id="footer-text">&copy; </p>
+                <p id="last-update">WDD 230 Project | Last updated: </p>
+                <p>info@greatplainschamber.com<br>+1 (123) 888-7766 | <a class="locationMap" href="#">Location Map</a></p>
+            </section>
+        </footer>
+    </body>
+</html>

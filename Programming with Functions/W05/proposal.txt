@@ -1,0 +1,51 @@
+Significant Program Proposal
+
+(This is a proposal. All proposals are written with our best knowledge
+at the beginning of a project. As we progress from the beginning to the
+end of a project, we gain more knowledge, and some of the ideas we
+proposed change. This is part of completing any project and is fine.
+However, we still must write a proposal so that our teachers or
+supervisors know what we intend to do. Please answer each of the
+following questions to the best of your knowledge.)
+
+1. What is the title of your program?				-(I have two ideas...)
+ - Contributions and Compound Interest (compound_interest.py)
+
+ - I would also like to make a password generator using user inputs.
+	title: PyPass Generator (py_pass_gen.py)
+
+2. What real world problem will your program address or help to solve?
+ - How much interest can I accrue over a set period of time? (Compound Interest Formula with Principal)
+
+The formula can be read as:
+
+	future value = principal(1 + rate_as_decimal / frequency_of_interest_obtained)^(frequency_of_interest_obtained * length_of_time_in_years) + (monthly_contribution(1+(rate_as_decimal/frequency_of_interest_obtained)^(frequency_of_interest_obtained * length_of_time_in_years) - 1) / (rate_as_decimal/frequency_of_interest_obtained)
+
+or
+	future_value = p * (1+r/n)^(nt) + ( m * (1+r/n)^(nt) - 1 ) / (r/n)
+(source: https://www.bizskinny.com/Finance/Compound-Interest/compound-interest-with-monthly-contributions.php#:~:text=Compound%20Interest%20with%20Regular%20Contributions%20Formula).
+
+ - This program would generate potentially strong passwords using developer-defined formulas, based on the users' input.
+
+3. What will you learn from developing this program?
+ - I plan on finding how to accurately test these functions, as I plan on there being being multiple units of measurement for types of input, like time in months, years, and days, and the frequency of interest payments, since banks don't follow the same schedule as others.
+
+ - I could learn how to use substring methods in Python. I would also like to learn how to use secure methods, like within the 'secrets' module of Python, of programming languages, for databases.
+
+4. What Python modules will your program use? (Some examples are: csv,
+datetime, functools, matplotlib, math, pandas, pytest, random, requests,
+and tkinter.)
+ - Math and datetime, at the very least. I may use the 'requests' module, maybe, for pulling the federal interest rate online. I will use pytest to test the arithmetic and possible comparative functions in the test file.
+
+ - secrets, maybe hashlib, and maybe os modules.
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+ - Yes. There will be a function that defines a function for converting inputs into different units of measurement and using that function and result as part of the overall calculation. the last function to be used will be for the total value after all interest is accounted for, plus the principal. I may have a comparative function showing the total interest earned over that whole time.
+
+ - Yes. This would make it easier to learn the modules.
+
+6. Will you write test functions to test many of your program functions?
+ - Definitely! trying to get the data I need for the calculator may be difficult with the 'requests' module, so I may not be able to do that. I can, however, do tests with the arithmetic, and there should at least be 3-4 functions.
+
+ - I would have to! Based on what I have already learned of the modules I would more than likely be using, I would need to test the functions (provided that can be accomplished with pytest) as I do not know much about these modules.
