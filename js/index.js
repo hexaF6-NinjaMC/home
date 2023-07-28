@@ -1,6 +1,34 @@
 const postListEl = document.querySelector("#repo-link-list");
 const copyYearEl = document.querySelector("#copy-year");
 const copyHolderEl = document.querySelector("#copy-holder");
+const spinningElWrapper = document.querySelector("#animation-wrapper");
+const shadesEl = document.querySelector("#shades");
+const shadeLeftEl = document.querySelector("#shade-left");
+const shadeRightEl = document.querySelector("#shade-right");
+const timeoutVal = 3000;
+
+setTimeout(
+	function loaded() {
+		spinningElWrapper.style = `
+			transition: all 0.3s ease-out;
+			transform: translateY(-100%);
+			opacity: 0;
+		`;
+		shadeLeftEl.style = `
+			transform: translateX(-100%);
+			transition: all 0.7s 0.3s ease-out;
+			opacity: 0;
+		`;
+		shadeRightEl.style = `
+			transform: translateX(+100%);
+			transition: all 0.7s 0.3s ease-out;
+			opacity: 0;
+		`;
+		shadesEl.style = `
+			visibility: hidden;
+		`;
+	},
+	timeoutVal);
 
 const anchors = [
 	{
