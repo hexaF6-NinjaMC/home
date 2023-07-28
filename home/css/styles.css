@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+@keyframes spin {
+  0% { 
+    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);  /* IE 9 */
+    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);  /* IE 9 */
+    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+/* <--------------roots--------------> */
+:root {
+  color-scheme: light dark;
+  --eerie-black: #1C2321;
+  --magnolia-white: #FCF7FF;
+  --fluoro-cyan: #6FFFE9;
+  --sapphire-blue: #0F52BA;
+  --fandango-purple: #AC2276;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* <--------------ID's--------------> */
+#animation-wrapper {
+  background-color: var(--eerie-black);
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 21;
+}
+
+#animation-wrapper #logo-spinner-animate img {
+  animation: spin 1s linear infinite;
+}
+
+#shades {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+#shade-left, #shade-right {
+  position: fixed;
+  height: 100vh;
+  width: 50vw;
+  background-color: var(--eerie-black);
+}
+
+#shade-left {
+  left: 0;
+}
+
+#shade-right {
+  right: 0;
+}
+
+#repo-link-list li {
+  padding: .12rem;
+}
+
+#content {
+  z-index: 1;
+}
+
+/* <--------------Classes and Psuedo-classes--------------> */
+/*
+Follow LVHA-order rule to style links:
+*/
+a:link {
+  background-color: var(--magnolia-white);
+  color: var(--sapphire-blue);
+}
+
+a:visited {
+  color: var(--fandango-purple);
+}
+
+a:hover {
+  background-color: var(--eerie-black);
+  color: var(--fluoro-cyan);
+}
+
+/* <--------------Elements--------------> */
+html, body {
+  margin: 0 auto;
+  background-color: var(--eerie-black);
+}
+
+header, footer {
+  text-align: center;
+}
+
+header {
+  background-color: black;
+}
+
+main {
+  background-image: none;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  bottom: 0;
+}
+
+ul {
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  color: var(--magnolia-white);
+  font-size: 2.5rem;
+  margin: 0 auto auto;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  padding: .2rem;
+}
