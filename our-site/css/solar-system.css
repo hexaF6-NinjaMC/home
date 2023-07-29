@@ -22,8 +22,8 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 10px;
-    width: var(--viewport-width-height);
-    height: var(--viewport-width-height);
+    width: calc(var(--viewport-width-height));
+    height: calc(var(--viewport-width-height));
     position: absolute;
 }
 .sun {
@@ -223,7 +223,7 @@ li, a {
 }
 
 a {
-    font-size: 1.75rem;
+    font-size: 2em;
     height: 100%;
     width: 100%;
     text-align: center;
