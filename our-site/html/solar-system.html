@@ -2,22 +2,40 @@
 <html>
 <head>
 	<link rel="stylesheet" href="../css/solar-system.css">
+	<meta name="author" content="Aaron Bechtel">
+	<meta name="description" content="A solar system reprentation built just from CSS3's animations! Made by Aaron Bechtel.">
 </head>
 <body>
-	<div class="container">
-        	<div class="sun">
-			<div class="mercury"></div>
-			<div class="venus"></div>
-        		<div class="earth">
-        			<div class="moon"></div>
+	<header>
+		<nav>
+			<ul class="naviagtion-list">
+				<li><a href="../../" target="_blank">Multi-Repo Home</a></li>
+				<li><a href="../../wdd230/" target="_blank">BYU-I Frontend Web Design & Development I</a></li>
+				<li><a href="../../wdd330/" target="_blank">BYU-I Frontend Web Design & Development II</a></li>
+				<li><a href="../../our-site/html/" target="_blank">Our Blogging Site (currently in development!!!)</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<div class="container">
+				<div class="sun">
+				<div class="mercury"></div>
+				<div class="venus"></div>
+					<div class="earth">
+						<div class="moon"></div>
+				</div>
+				<div class="mars"></div>
+				<div class="asteroid-belt"></div>
+				<div class="jupiter"></div>
+				<div class="saturn"></div>
+				<div class="uranus"></div>
+				<div class="neptune"></div>
 			</div>
-			<div class="mars"></div>
-			<div class="asteroid-belt"></div>
-			<div class="jupiter"></div>
-			<div class="saturn"></div>
-			<div class="uranus"></div>
-			<div class="neptune"></div>
 		</div>
-	</div>
+	</main>
+	<footer>
+        <p>This content is &copy; <span id="copy-year"></span> <span id="copy-holder"></span>.<br>All rights reserved.</p>
+	</footer>
+	<script src="../js/solar-system.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 :root {
     --rotations-per-minute: 2;
-    --viewport-width-height: 65vw;
+    --viewport-width-height: 95vw;
     --earth-year: 365;
     --moon-rotation: calc(27.32 / 365);
     --moon-solar-rotation: calc(var(--moon-rotation) * var(--solar-rotation) * 1s);
@@ -14,14 +14,16 @@ body {
     justify-content: center;
     background-color: black;
     overflow: hidden;
+    width: 100vw;
+    font-size: 4em;
 }
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10px;
-    width: calc(var(--viewport-width-height));
-    height: calc(var(--viewport-width-height));
+    width: var(--viewport-width-height);
+    height: var(--viewport-width-height);
     position: absolute;
 }
 .sun {
@@ -194,4 +196,62 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+header {
+    position: absolute;
+    align-self: first baseline;
+    max-width: 100vw;
+    text-align: center;
+    z-index: 20;
+}
+
+ul {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-height: 1.5em;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li, a {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    font-size: 1.75rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+a:link {
+    color: #6FFFE9;
+}
+
+a:visited {
+    color:#e07f7f
+}
+
+a:hover {
+    background-color: rgba(48, 46, 46, 0.5);
+    color: #ececec;
+}
+
+main {
+    max-width: 100vw;
+}
+
+footer {
+    background-color: black;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    position: relative;
+    align-self: last baseline;
+    opacity: 0.75;
 }

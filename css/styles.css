@@ -38,7 +38,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 #animation-wrapper {
   background-color: var(--eerie-black);
   position: fixed;
-  width: 100vw;
+  width: 100%;
   display: flex;
   height: 90vh;
   align-items: center;
@@ -54,7 +54,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 #shades {
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: 0;
 }
 
@@ -112,7 +112,7 @@ header {
 
 footer {
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
 }
 
@@ -122,8 +122,11 @@ ul {
   padding: 0;
 }
 
-h1 {
+h1, h2, h3, footer p {
   color: var(--magnolia-white);
+}
+
+h1 {
   font-size: 5em;
   margin: 0 auto;
 }
