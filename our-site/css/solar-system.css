@@ -252,6 +252,6 @@ footer {
     text-align: center;
     color: white;
     position: relative;
-    align-self: flex-end;
     opacity: 0.75;
+    margin-top: 50vh;
 }
