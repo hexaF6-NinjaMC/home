@@ -16,7 +16,7 @@ Jumper is a game in which the player seeks to solve a puzzle by guessing the let
 
 ## Required Technologies
 ---
-- Python 3.8.0
+- Python 3.11.4
 
 ## Requirements
 ---
