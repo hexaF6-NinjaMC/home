@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/hexaF6-NinjaMC/home/issues"
   },
-  "homepage": "https://github.com/hexaF6-NinjaMC/home#readme",
+  "homepage": "https://github.com/hexaF6-NinjaMC/home",
   "dependencies": {
     "express": "^4.18.2"
   }
