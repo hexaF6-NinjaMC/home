@@ -1,0 +1,34 @@
+/* Root var's and styles */
+:root {
+	font-size: 1.5rem;
+}
+
+/* ID's */
+#flight-path>p {
+	margin: 0;
+}
+
+#flight-path {
+	margin-bottom: 2em;
+}
+
+/* Classes */
+.filled-space {
+	width: 100%;
+	min-height: calc(88.5vh / 4);
+	max-height: calc(100vh / 4);
+	background-color: #012345;
+}
+
+/* Elements */
+body {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
