@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.75em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    header, footer {
+        min-height: 15vh;
+        border-radius: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 2.75rem;
+    }
+}

@@ -26,6 +26,7 @@
   --fluoro-cyan: #6FFFE9;
   --sapphire-blue: #0F52BA;
   --fandango-purple: #AC2276;
+  --rose-quartz: #a30137;
 }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -73,6 +74,17 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
   right: 0;
 }
 
+#fancy-cue {
+  display: block;
+  max-width: 98vw;
+}
+
+#fancy-cue img {
+  display: inline-block;
+  max-width: 90vw;
+  text-align: center;
+}
+
 #repo-link-list li {
   padding: .12rem;
 }
@@ -107,7 +119,7 @@ html, body {
 }
 
 header {
-  background-color: black;
+  background-color: var(--rose-quartz);
 }
 
 footer {
