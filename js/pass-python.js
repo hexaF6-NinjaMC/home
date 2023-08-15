@@ -1,4 +1,8 @@
 const spawner = require('child_process').spawn;
+const express = require('express');
+
+const app = express();
+const API_PORT = process.env.PORT || 3000;
 
 //string
 const name = 'Aaron';
