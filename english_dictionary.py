@@ -6,4 +6,10 @@ def printRandWord():
     curDir = os.path.dirname(__file__)
     with open(f"{curDir}/engWords.json", "r") as engWords:
         word = engWords.readlines()
-    return f"The word is: {random.choice(word)}"
+    # print(word)
+    word_of_the_day_line = random.choice(word)
+    if word_of_the_day_line.endswith('",\n'):
+        word_of_the_day = word_of_the_day_line.split(',')[0]
+    else:
+        word_of_the_day = word_of_the_day_line
+    return f"The word of the day is: {word_of_the_day}."
