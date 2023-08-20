@@ -1,6 +1,6 @@
 # Use the official lightweight Python image.
 # https://hub.docker.com/_/python
-FROM python:3.11.4
+FROM python:3.11
 
 # Allow statements to immediately appear in the Knative logs
 ENV PYTHONUNBUFFERED True
