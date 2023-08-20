@@ -1,6 +1,4 @@
-import sys
 import os
-sys.path.append("example_youtube")
 
 from english_dictionary import printRandWord
 
