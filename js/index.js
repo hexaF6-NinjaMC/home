@@ -53,7 +53,7 @@ const anchors = [
 	},
 	{
 		text: "Our Blogging Site (currently in development!!!)",
-		url: "./our-site/html/"
+		url: "https://blog.fsixninja.dev"
 	},
 	{
 		text: "An Example of Utlizing the Position properties in CSS",
