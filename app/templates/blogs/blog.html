@@ -11,7 +11,9 @@
     </head>
 
     <body>
-        <header></header>
+        <header>
+            <h1>{{ request.args.get('headingOne') }}'s blog</h1>
+        </header>
 
         <main>
             <iframe src="{{ url_for( 'render_blog', dir='/static/assets', name=request.args.get('name'), filename='blog.txt' ) }}"></iframe>

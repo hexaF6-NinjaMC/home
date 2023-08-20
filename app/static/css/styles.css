@@ -3,14 +3,15 @@
     --secondary-sapphire: #0f52ba;
     --tertiary-fandango: #ac2276;
     --quarternary-fluorescent-cyan: #6fffe9;
-    --quinary-rose-quartz: #a4969b;
-    --shade-color: rgba(0, 0, 0. 0.5);
-    --pop-up-color: rgba(105, 196, 199, 0.85);
+    --quinary-rose-quartz: #a4969b; 
+    /* --shade-color: rgba(0, 0, 0, 0.5); */
+    /* --pop-up-color: rgba(105, 196, 199, 0.85); */
 }
 
 iframe {
     width: 100%;
-    color: lawngreen;
+    border: 0;
+    /* color: lawngreen; */ /* It doesn't work like this... Security Issues. Yup :( */
 }
 
 h1 {
@@ -22,6 +23,8 @@ h2 {
 }
 
 header, footer {
+    margin: 0 auto;
+    text-align: center;
     background-color: var(--tertiary-fandango);
 }
 
