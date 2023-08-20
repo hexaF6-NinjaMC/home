@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <meta name="author" content="Aaron Bechtel">
         <meta name="description" content="The blogging page of Aaron and Maggie Bechtel!">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="{{ url_for( 'static', filename='css/styles.css' ) }}">
+        <link rel="icon" href="{{ url_for( 'static', filename='assets/favicon.ico' ) }}">
     </head>
 
     <body>
@@ -22,17 +23,19 @@
             <article id="aaron">
                 <h3>Aaron's Introduction</h3>
                 <p class="intro"></p>
+                <a href="{{ url_for( 'post_blog', template='blog.html', name='aa' ) }}">Aaron's blog</a>
             </article>
             
             <article id="maggie">
                 <h3>Maggie's Introduction</h3>
                 <p class="intro"></p>
+                <a href="{{ url_for( 'post_blog', template='blog.html', name='ma' ) }}">Maggie's blog</a>
             </article>
         </main>
 
         <footer id="license-anchor">
             <h4>This page is <span>&copy;<span id="copy-year"></span> Aaron and Maggie Bechtel</span>. This content is not to be distributed, reproduced, or altered by any other party, without written consent from both authors, as per the <a id="license" href="#license-anchor">____ license</a>.</h4>
-            <script src="../js/setFooterContent.js"></script>
+            <script src="../static/js/setFooterContent.js"></script>
         </footer>
     </body>
 </html>
