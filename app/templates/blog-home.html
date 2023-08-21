@@ -15,6 +15,7 @@
         </header>
 
         <main>
+            <div>{{ randomWord }}</div>
             <h2>Hello!</h2>
             <p>
                 We all have a lot to say, but what good is that if our voice isn't heard? For that, we present to you... <strong>our blog!</strong>
@@ -35,7 +36,7 @@
 
         <footer id="license-anchor">
             <h4>This page is <span>&copy;<span id="copy-year"></span> Aaron and Maggie Bechtel</span>. This content is not to be distributed, reproduced, or altered by any other party, without written consent from both authors, as per the <a id="license" href="#license-anchor">____ license</a>.</h4>
-            <script src="../static/js/setFooterContent.js"></script>
+            <script src="{{ url_for( 'static', filename='js/setFooterContent.js' ) }}"></script>
         </footer>
     </body>
 </html>

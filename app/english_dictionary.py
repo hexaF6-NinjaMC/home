@@ -12,4 +12,4 @@ def printRandWord():
         word_of_the_day = word_of_the_day_line.split(',')[0]
     else:
         word_of_the_day = word_of_the_day_line
-    return f"The word of the day is: {word_of_the_day}."
+    return f"Learn a new word: {word_of_the_day}."
