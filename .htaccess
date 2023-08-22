@@ -1,0 +1,8 @@
+# .htaccess tutorial
+# Multi-Repo directory
+
+Options +Indexes
+<files>
+  order deny,allow
+  deny from all
+</files>
