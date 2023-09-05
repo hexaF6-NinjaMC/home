@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <title>This is Us!</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Aaron Bechtel">
-        <meta name="description" content="The blogging page of Aaron and Maggie Bechtel!">
-        <link rel="stylesheet" href="{{ url_for( 'static', filename='css/styles.css' ) }}">
-        <link rel="icon" href="{{ url_for( 'static', filename='assets/favicon.ico' ) }}">
-    </head>
+{% extends "base.html" %}
+    {% block title %}This is Us!{% endblock %}
+    {% block content %}The blog home page of Aaron and Maggie Bechtel!{% endblock %}
 
-    <body>
-        <header>
-            <h1>Welcome To... US!!!</h1>
-        </header>
+        {% block h1 %}Welcome To... US!!!{% endblock %}
 
-        <main>
+        {% block main %}
             <div>{{ randomWord }}</div>
             <h2>Hello!</h2>
             <p>
@@ -24,19 +14,12 @@
             <article id="aaron">
                 <h3>Aaron's Introduction</h3>
                 <p class="intro"></p>
-                <a href="{{ url_for( 'post_blog', template='blog.html', name='aa', headingOne='Aaron' ) }}">Aaron's latest blog</a>
+                <a href="{{ url_for( 'post_blog', template='blog.html', headingOne='Aaron' ) }}">Aaron's latest blog</a>
             </article>
             
             <article id="maggie">
                 <h3>Maggie's Introduction</h3>
                 <p class="intro"></p>
-                <a href="{{ url_for( 'post_blog', template='blog.html', name='ma', headingOne='Maggie' ) }}">Maggie's latest blog</a>
+                <a href="{{ url_for( 'post_blog', template='blog.html', headingOne='Maggie' ) }}">Maggie's latest blog</a>
             </article>
-        </main>
-
-        <footer id="license-anchor">
-            <h4>This page is <span>&copy;<span id="copy-year"></span> Aaron and Maggie Bechtel</span>. This content is not to be distributed, reproduced, or altered by any other party, without written consent from both authors, as per the <a id="license" href="#license-anchor">____ license</a>.</h4>
-            <script src="{{ url_for( 'static', filename='js/setFooterContent.js' ) }}"></script>
-        </footer>
-    </body>
-</html>
+        {% endblock %}

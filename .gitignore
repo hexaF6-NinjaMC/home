@@ -5,3 +5,5 @@
 __pycache__
 .pytest_cache
 ai-app
+app/secretKey.txt
+app/passReset

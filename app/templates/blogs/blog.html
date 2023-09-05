@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <title></title>
-        <meta charset="utf-8">
-        <meta viewport="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Aaron Bechtel">
-        <meta name="description" content="blank">
-        <link rel="stylesheet" href="{{ url_for( 'static', filename='css/styles.css' ) }}">
-        <link rel="icon" href="{{ url_for( 'static', filename='assets/favicon.ico' ) }}">
-    </head>
+{% extends "base.html" %}
+    {% block title %}{{ headingOne }}'s Latest Blog{% endblock %}
+    {% block metacontent %}{% endblock %}
 
-    <body>
-        <header>
-            <h1>{{ request.args.get('headingOne') }}'s blog</h1>
-        </header>
+        {% block h1 %}{{ headingOne }}'s blog{% endblock %}
 
-        <main>
-            <iframe src="{{ url_for( 'render_blog', dir='/static/assets', name=request.args.get('name'), filename='blog.txt' ) }}"></iframe>
-        </main>
-
-        <footer id="license-anchor">
-            <h4>This page is <span>&copy;<span id="copy-year"></span> Aaron and Maggie Bechtel</span>. This content is not to be distributed, reproduced, or altered by any other party, without written consent from both authors, as per the <a id="license" href="#license-anchor">____ license</a>.</h4>
-            <script src="{{ url_for( 'static', filename='js/setFooterContent.js' ) }}"></script>
-        </footer>
-    </body>
-</html>
+        {% block main %}
+            {% if headingOne == 'Aaron' %}
+                <iframe src="{{ url_for( 'render_blog', dir='/static/assets/', twoInitials='aa', filename='blog.txt' ) }}"></iframe>
+            {% elif headingOne == 'Maggie' %}
+                <iframe src="{{ url_for( 'render_blog', dir='/static/assets', twoInitials='ma', filename='blog.txt' ) }}"></iframe>
+            {% endif %}
+        {% endblock %}
