@@ -16,8 +16,6 @@ app = Flask(__name__)
 # Add Database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 # Get a Secret Key
-with open('secretKey.txt', 'r') as secret:
-    app.config['SECRET_KEY'] = secret.read()
 skey = app.config['SECRET_KEY']
 
 # Initialize the database
