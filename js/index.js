@@ -52,12 +52,20 @@ const anchors = [
 		url: "./our-site/html/solar-system.html"
 	},
 	{
-		text: "Our Blogging Site (currently in development!!!)",
+		text: "An Example of Utlizing the Position properties in CSS",
+		url: "./our-site/html/html-testing-file.html"
+	},
+	{
+		text: "Our Blogging Site (basic functionality, currently in development!)",
 		url: "https://blog.fsixninja.dev"
 	},
 	{
-		text: "An Example of Utlizing the Position properties in CSS",
-		url: "./our-site/html/html-testing-file.html"
+		text: "The Grocery tracker tool",
+		url: "https://grocery.fsixninja.dev"
+	},
+	{
+		text: "Live Code Editor",
+		url: "https://code.fsixninja.dev"
 	}
 ];
 
