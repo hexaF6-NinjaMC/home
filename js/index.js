@@ -66,6 +66,10 @@ const anchors = [
 	{
 		text: "Live Code Editor",
 		url: "https://code.fsixninja.dev"
+	},
+	{
+		text: "Restaurant API documentation",
+		url: "https://restaurantapi.fsixninja.dev"
 	}
 ];
 
