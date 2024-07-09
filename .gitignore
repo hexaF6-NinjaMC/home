@@ -7,3 +7,4 @@ __pycache__
 ai-app
 app/secretKey.txt
 app/passReset
+*node_modules/
