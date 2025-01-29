@@ -1,0 +1,51 @@
+# This is a basic workflow that is scheduled to clean the database JSON file
+
+name: Database Cleanup
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  schedule:
+  - cron: "*/5 * * * *"
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "greet"
+  clean_db:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - uses: actions/checkout@v4.1.7
+    # Runs a single command using the runners shell
+    - name: Clean database.json
+      run: |
+        cd week11
+        DB_CLEANUP=$(cat << EOF
+        {
+          "users": [
+            {
+              "id": 1,
+              "username": "niklauswirth89",
+              "email": "nw89@pascal.cre",
+              "password": "thePascalP10n33r>2024-01-01",
+              "firstname": "Niklaus",
+              "lastname": "Wirth",
+              "age":89
+            }
+          ],
+          "posts": []
+        }
+        
+        EOF
+        
+        )
+        : > ../week11/auth/json-server/database.json
+        echo $DB_CLEANUP >> ../week11/auth/json-server/database.json
+        git diff
+        git config --global user.email "bechtel.aaron22@gmail.com"
+        git config --global user.name "hexaF6-NinjaMC"
+        git add ../week11/auth/json-server/database.json
+        git commit --message "Cleaned database JSON file to defaults."
+        git push

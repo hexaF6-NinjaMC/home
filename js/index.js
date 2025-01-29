@@ -70,6 +70,10 @@ const anchors = [
 	{
 		text: "Restaurant API documentation",
 		url: "https://restaurantapi.fsixninja.dev"
+	},
+	{
+		text: "Gaming Channel website",
+		url: "https://gaming.fsixninja.dev"
 	}
 ];
 
@@ -80,7 +84,7 @@ anchors.forEach((anchor) => {
 
 const now = new Date();
 const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-const copyYear = now.getFullYear();
+const copyYear = `2023 \u2013 ${now.getFullYear()}`;
 const copyHolderName = document.querySelector("meta[name='author']").content;
 // console.log(copyHolderName);
 copyYearEl.textContent = copyYear;
